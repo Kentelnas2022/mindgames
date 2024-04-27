@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Memory Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://cdn1.epicgames.com/ue/product/Screenshot/Screenshot11-1920x1080-9cd976fd185dbf1d32c0b6e5c1ff87e3.jpg?resize=1&w=1920&fbclid=IwZXh0bgNhZW0CMTAAAR0Y854t7oCyGHBN-k2jbxHhYIG3xMuTyPlJQxpBxKdC8frJf3KnkwAvMY8_aem_AThHZvpY5pRpWh52so531QMaaAoCbFJgLuTtO_0ts4O5bbbONDv51YlDZfrVj_ypASxn6tj7r3I42oK-wwsfIJrO');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding some opacity to make text more readable */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .start-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .start-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Memory Game</h1>
+        
+        <p>Welcome to the Memory Game! Your objective is to match all the pairs of emojis on the board.</p>
+        <h2>How to Play?</h2>
+        <p> Click on any face-down card to reveal the emoji symbol.
+            Click on another face-down card to reveal its symbol.
+            If the symbols on the two cards match, they remain face-up.
+            If the symbols do not match, both cards are turned face-down again after a brief moment.
+            Continue flipping pairs of cards until all pairs are matched.
+            The game ends when all pairs are successfully matched, or the time limit is reached.
+            If all pairs are matched within the time limit, you win the game.
+            If you run out of time before all pairs are matched, the game ends.
+            Click the "Try Again" button to restart the game and try to beat your previous score.</p>
+        <h3>Tips</h3>
+        <p>Pay attention to the location of each emoji as you flip cards to improve your memory.
+            Try to complete the game with the fewest moves and shortest time to achieve a high score.
+            Practice regularly to improve your memory and speed.
+            Enjoy the challenge of matching emojis in this memory game!</p>
+
+        <button class="start-button" onclick="SwitchPage()" id="start"><span></span>Play</button>
+    </div>
+    <script>
+        function SwitchPage(){
+            window.location.href = 'mindgames.html';
+        }
+    </script>
+</body>
+</html>
